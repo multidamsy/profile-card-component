@@ -1,0 +1,78 @@
+p, h5 {
+    margin: 0.2rem;
+}
+h5 {
+    font-size: 0.7em;
+}
+p {
+    font-size: 0.6em;
+    line-height: 5px;
+}
+.age {
+    font-weight: lighter;
+}
+div.cover {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: top -50% left -25%, bottom -100% right -25%;
+    background-size: 37rem;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    height: 100vh;
+    max-width: 100%;
+}
+div.container {
+    background-color: white;
+    height: 260px;
+    max-width: 250px;
+    border-radius: 5px 5px 5px 5px;
+}
+div.top > img {
+    width: 100%;
+    max-height: 80px;
+    border-radius: 5px 5px 0 0;
+}
+
+div.middle {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.1px solid rgb(236, 231, 231);
+    padding-bottom: 7%;
+}
+div.middle > img {
+    border: 3px solid beige;
+    border-radius: 90px;
+    width: 30%;
+    margin-top: -15%;
+}
+.grid-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 7%;
+}
+div.stat-align {
+    text-align: center;
+}
+
+@media only screen and (max-width: 719px) {
+    div.cover {
+        background-color: hsl(185, 75%, 39%);
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: top -20% left -60%, bottom -100% right -25%;
+        background-size: 25rem;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        height: 100vh;
+        max-width: 100%;
+    }    
+}
